@@ -1,0 +1,111 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.conatinerTituloTurma, .conatinerTituloTurmaDoQuizSelecionado {
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.containerQuizFeitos {
+    background-color: #D9D9D9;
+    width: 50%;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 20px;
+    margin-left: 10px;'
+    margin-top: 10px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #quizFeitos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: black;
+        font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: fit-content;
+    }
+
+    #quizFeitos:hover {
+        scale: 1.02;
+        right: 10px;
+        color: rgb(67, 66, 66);
+    }
+}
+
+.contanierButtonCriarNovoQuiz {
+    button {
+        position: fixed; /* Fixa o botão na tela */
+        top: 95%; /* Posiciona o botão no meio da tela (50% da altura) */
+        left: 50%; /* Posiciona o botão no meio da tela (50% da largura) */
+        transform: translate(-50%, -50%); /* Ajusta o botão para que o centro dele esteja exatamente no meio */
+        z-index: 1000; /* Garante que o botão fique por cima de outros elementos */
+        background-color: #2B47F8;
+        color: ghostwhite;
+        border: none;
+        font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+        font-weight: bold;
+        width: 30%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: background-color 0.15s ease;
+    }
+
+    button:hover {
+        background-color: #4CAF50;
+        transition: background-color 0.15s ease;
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerQuizFeitos {
+        width: 95%;
+        border-radius: 10px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 10px;
+    }
+
+    .contanierButtonCriarNovoQuiz {
+        button {
+            position: fixed; /* Fixa o botão na tela */
+            top: 95%; /* Posiciona o botão no meio da tela (50% da altura) */
+            left: 50%; /* Posiciona o botão no meio da tela (50% da largura) */
+            transform: translate(-50%, -50%); /* Ajusta o botão para que o centro dele esteja exatamente no meio */
+            z-index: 1000; /* Garante que o botão fique por cima de outros elementos */
+            background-color: #2B47F8;
+            color: ghostwhite;
+            border: none;
+            font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+            font-weight: bold;
+            width: 80%;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 16px;
+          } 
+    }
+}

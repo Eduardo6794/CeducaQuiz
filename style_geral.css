@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.barra_menu {
+    display: grid; 
+    grid-template-columns: 1fr 7fr 1fr; 
+    width: 100%; height: 10vh; 
+    max-height: 1.85cm; 
+    min-height: 1.2cm; 
+    background-color: #F4F4F2; 
+    grid-template-rows: 1fr; 
+    position: relative;
+    z-index: 10;
+}
+.barra_menu_icone_1 {
+    height: clamp(0.84cm, 7vh, 1.295cm); 
+    align-self: center; 
+    justify-self: center; 
+    margin-left: 0.2cm; 
+    position: relative;
+}
+.barra_menu_logo {
+    height: clamp(0.84cm, 7vh, 1.295cm); 
+    justify-self: center; 
+    scale: 3; 
+    top: clamp(0.9cm, 7.5vh, 1.3875cm); 
+    position: relative;
+}
+.barra_menu_icone_2 {
+    height: clamp(0.84cm, 7vh, 1.295cm); 
+    align-self: center; 
+    justify-self: center; 
+    margin-right: 0.2cm; 
+    position: relative;
+}
+.espacamento_pos_menu {
+    display: block; 
+    width: 100%; 
+    height: 15.875vh; 
+    min-height: 0.8cm; 
+    position: relative;
+}
+.primeira_div_centralizadora {
+    display: block; 
+    width: 100%; 
+    position: relative; 
+    height: fit-content; 
+    z-index: 1;
+}
+.primeira_div_centralizadora_forms {
+    margin: auto; 
+    width: 20%; 
+    min-width: 6.5cm;
+}
+
+.botoes {
+    background-color: #D9D9D9;
+    color: #000000;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border: solid 1px #D0D0D0;
+    height: 45px;
+    width: 40%;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 2px 5px -1px #00000099;
+    transition: background-color ease 0.2s, border ease 0.2s, box-shadow ease 0.2s;
+}
+.botoes:hover {
+    background-color: #4cafaf;
+    border: solid 1px #459e9e;
+    box-shadow: 0 0 5px 1px #00000099;
+    transition: background-color ease 0.2s, border ease 0.2s, box-shadow ease 0.2s;
+}
+.botoes:active {
+    background-color: #5cb9b9;
+    border: solid 1px #459e9e;
+    box-shadow: 0 0 5px 1px #00000099;
+    transition: background-color ease 0.2s, border ease 0.2s, box-shadow ease 0.2s;
+}

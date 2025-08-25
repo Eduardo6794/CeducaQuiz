@@ -1,0 +1,64 @@
+@import url('../../../style_geral.css');
+@import url('../../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inputsAnoECurso {
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+}
+
+#inputAno {
+    width: 100%;
+}
+
+#selectCursos {
+    width: 100%;
+    font-size: 10px;
+}
+
+.inputsRmECe {
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+}
+
+#inputCE {
+    width: 100%;
+}
+
+#inputRm {
+    width: 100%;
+}
+
+
+
+.imglogo {
+    height: 130px;
+    position: absolute;
+    right: 120px;
+    top: 40px;
+}
+
+.cadastroRealizado {
+    background-color: #4CAF50;
+    height: 270px;
+    color: white;
+    border-radius: 15px;
+    padding: 70px 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    justify-self: center;
+
+}
+
+#imgCadRealizado {
+    width: 150px;
+}
+
+.textoCadRealizado {
+    text-align: center;
+}

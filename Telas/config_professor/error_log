@@ -1,0 +1,1 @@
+[17-Jun-2025 00:34:58 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/olhona42/lampada7.com.br/ceduca/Telas/config_professor/config_professor.php:27) in /home1/olhona42/lampada7.com.br/ceduca/Telas/config_professor/config_professor.php on line 28

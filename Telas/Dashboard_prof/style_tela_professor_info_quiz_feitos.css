@@ -1,0 +1,199 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    right: 12%;
+    top: 85%;
+    width: 400px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+
+    
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #2B47F8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745;
+}
+}
+
+.conatinerTituloTurma, .conatinerTituloTurmaDoQuizSelecionado, .conatinerQuizSelecionado {
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.containerAlunosQueFizeramQuiz {
+        background-color: #D9D9D9;
+        width: 50%;
+        border-radius: 5px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        row-gap: 5px;
+        display: flex;
+        flex-direction: column;
+    
+        #alunoQueFizeramQuiz {
+            color: black;
+            font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+            width: fit-content;
+            margin: 0;
+        }
+    
+        #alunoQueFizeramQuiz:hover, .notaAlunoNumeroQuestoes:hover  {
+            scale: 1.02;
+            right: 10px;
+            color: rgb(67, 66, 66);
+        }
+}
+
+.notaAlunoNumeroQuestoes {
+    color: black;
+    font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.notaAlunoNumeroQuestoes:hover {
+    scale: 1.02;
+    right: 10px;
+    color: rgb(67, 66, 66);
+}
+
+.AlunoENotaDoQuiz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerQrCodeDoQuiz {
+    position: absolute;
+    right: 15%;
+    top: 38%;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+
+}
+
+.texto {
+
+	width:100%;
+
+}
+
+
+@media (max-width: 1000px) {
+    .containerQrCodeDoQuiz {
+        position: static;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #qrCodeImg {
+            width: 130px;
+            height: 130px;
+        }
+
+	
+    }
+
+    .containerAlunosQueFizeramQuiz{
+        width: 95%;
+
+        #alunoQueFizeramQuiz {
+            font-size: 14px;
+        }
+    }
+
+        .container {
+        position: static;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+	.texto {
+
+	  width:50%;
+
+	}
+
+
+
+
+}

@@ -1,0 +1,169 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    overflow-x: hidden;
+
+}
+.container_materia {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.materia {
+    background-color: #F4F4F2;
+    border: 3px solid #5B88A5;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.submenu_materia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:10px;
+}
+
+.submenu_materia div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+
+.submenu_forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.submenu_forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#Adicionar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Editar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Excluir {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tituloNomeMateria {
+    color: black;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#btnAdd{
+    width: 32%;
+    background-color: #2B47F8;
+    color: ghostwhite;
+    border: none;
+    font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+    font-weight: bold;
+}
+
+#btnEdit{
+    width: 32%;
+    background-color: #ffae00;
+    color: ghostwhite;
+    border: none;
+    font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+    font-weight: bold;
+}
+
+#btnExcluir{
+    width: 32%;
+    background-color: #ff0000;
+    color: ghostwhite;
+    border: none;
+    font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+    font-weight: bold;
+}
+
+
+#tituloSelectMateria {
+    color: black;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#inputNomeMateria {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.containerBtnsForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#selectTurma {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:768px) {
+    .materia {
+        width: 94%;
+        margin: 0;
+    }
+
+    .containerBtnsForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    #btnExcluir, #btnAdd, #btnEdit {
+        width: 100%;
+
+    }
+    #selectTurma {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}

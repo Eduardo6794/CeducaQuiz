@@ -1,0 +1,206 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.imglogo {
+    height: 130px;
+    position: absolute;
+    right: 120px;
+    top: 40px;
+}
+
+.containerNomeProfessor {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    top: -50px;
+    justify-self: center;
+    
+}
+
+.containerInputSearchTurmas {
+    position: relative;
+    background-color: blue;
+    width: max-content;
+    width: 50%;
+    margin-left: 10px;
+    top: -20px;
+    margin: auto;
+}
+
+#imgSearch {
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
+}
+
+#inputSearchTurmas{
+    background-color: #D9D9D9;
+    border: none;
+    width: 100%;
+    padding: 0px 20px;
+    color: black;
+    font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+.conatinerTituloTurma {
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.containerTurmas {
+    
+    background-color: #D9D9D9;
+    width: 50%;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    
+
+    #turmas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: black;
+        font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+        
+    }
+
+
+
+    #turmas:hover {
+        scale: 1.02;
+        right: 10px;
+        color: rgb(67, 66, 66);
+    }
+
+}
+
+
+.contanierButtonCriarNovaTurma {
+    button {
+        position: fixed; /* Fixa o botão na tela */
+        top: 95%; /* Posiciona o botão no meio da tela (50% da altura) */
+        left: 50%; /* Posiciona o botão no meio da tela (50% da largura) */
+        transform: translate(-50%, -50%); /* Ajusta o botão para que o centro dele esteja exatamente no meio */
+        z-index: 1000; /* Garante que o botão fique por cima de outros elementos */
+        background-color: #2B47F8;
+        color: ghostwhite;
+        border: none;
+        font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+        font-weight: bold;
+        width: 30%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: background-color 0.15s ease;
+    }
+    
+    button:hover {
+        background-color: #4CAF50;
+        transition: background-color 0.15s ease;
+    }
+}
+
+
+@media (max-width: 1000px){
+
+    .containerNomeProfessor {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color: ghostwhite;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .containerInputSearchTurmas {
+        position: relative;
+        background-color: blue;
+        width: max-content;
+        width: 90%;
+        margin-left: 10px;
+        top: -30px;
+        left: 47%; /* Posiciona o botão no meio da tela (50% da largura) */
+        transform: translate(-50%); /* Ajusta o botão para que o centro dele esteja exatamente no meio */
+        z-index: 1000; 
+        
+    }
+
+    .contanierButtonCriarNovaTurma {
+        button {
+            position: fixed; /* Fixa o botão na tela */
+            top: 95%; /* Posiciona o botão no meio da tela (50% da altura) */
+            left: 50%; /* Posiciona o botão no meio da tela (50% da largura) */
+            transform: translate(-50%, -50%); /* Ajusta o botão para que o centro dele esteja exatamente no meio */
+            z-index: 1000; /* Garante que o botão fique por cima de outros elementos */
+            background-color: #2B47F8;
+            color: ghostwhite;
+            border: none;
+            font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+            font-weight: bold;
+            width: 80%;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 16px;
+          } 
+    }
+
+    .containerTurmas {
+        background-color: #D9D9D9;
+        width: 95%;
+        border-radius: 10px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 10px;
+
+    
+        #turmas {
+            color: black;
+            font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+            font-weight: bold;
+        }
+    }
+    
+}

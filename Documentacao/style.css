@@ -1,0 +1,83 @@
+@import url('../style_geral.css');
+@import url('../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d9d9d9;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.fontpoppins {
+    font-family: 'Poppins', Arial;
+}
+
+.centraliza { 
+    text-align: center;
+}
+
+li::marker {
+    font-weight: bold;
+    color: #000000;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.texto span {
+    font-size: 25px;
+}
+
+.texto ol {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    li {
+        font-size: 25px;
+    }
+}
+
+.texto > ol > li > ul > li {
+    margin-right: 50px;
+}
+
+
+#btnvoltar {
+    background-color: #2B47F8;
+    color: #FFFFFF;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border: none;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color ease 0.2s;
+}
+#btnvoltar:hover {
+    background-color: #4CAF50;
+    transition: background-color ease 0.2s;
+}

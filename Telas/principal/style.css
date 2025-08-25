@@ -1,0 +1,549 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d9d9d9;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #243A69;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#imglogo {
+    height: 75px;
+}
+
+#menuMobile {
+    background-color: #204289;
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    height: 20vh;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+#menuHamburguerMobile {
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    transition: 1s;
+}
+
+#menuHumburguer1 {
+    width: 55px;
+    height: 10px;
+    background-color:#D9D9D9;
+    border-radius: 3px;
+}
+#menuHumburguer2 {
+    width: 55px;
+    height: 10px;
+    background-color:#D9D9D9;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+#menuHumburguer3 {
+    width: 55px;
+    height: 10px;
+    background-color:#D9D9D9;
+    border-radius: 3px;
+}
+
+#redirecionamentoMobile {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid white;
+    }
+}
+
+#btnEntrar {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border:none;
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #4CAF50;
+    font-size: 18px;
+}
+
+#btnEntrar:hover {
+    background-color: #2B47F8;
+}
+
+#imglogoRederecionamenteDesktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#redirecionamentoDesktop {
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 500px;
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid white;
+    }
+}
+
+#containerBemVindo {
+    text-align: center;
+    color: #2B47F8;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 12vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTituloCeducaQuiz {
+    text-transform: uppercase;
+    color: #243A69;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#conteudoImg {
+    display: flex;
+}
+
+.containerConteudoIntroducao {
+    padding: 20px;
+    text-align: justify;
+    color: #243A69;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#containerImgsMobileIntroducao {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        color: #243A69;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+#imgMobileIntroducao {
+    height: 250px;
+    width: 100%;
+    display: none;
+}
+
+#imgMobileIntroducaoDesktop {
+    height: auto;
+    width: 50vw;
+    filter : drop-shadow(10px 10px 10px black);
+}
+
+#pImgsIlustrativas {
+    display: none;
+}
+
+#containerBarraQuebraPagina {
+    padding: 20px;
+    width: 100%;
+}
+
+.containerIntroducao {
+    padding: 10px;
+}
+
+#barraQuebraPagina {
+    height: 3px;
+    width: 100%;
+    background-color: #243A69;
+}
+
+#btnDownloadDoc {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border:none;
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #2B47F8;
+    font-size: 18px;
+}
+
+#btnDownloadDoc:hover {
+    background-color: #4CAF50;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #243A69;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIcons {
+    height:20px;
+      
+}
+
+#containerContatos {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    column-gap: 50px;
+  
+    ul {
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.containersociais {
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px;
+}
+
+.links-footer {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    gap: 20px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins', Arial;
+    }
+}
+
+.linkFormatado {
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.linkFormatado:hover {
+    text-decoration: none;
+    color: rgb(185, 185, 194);
+    cursor: pointer;
+}
+
+#redirecionamentoDesktop, #redirecionamentoMobile {
+    a {
+        text-decoration: none;
+        color: ghostwhite;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+#seta {
+    width: 60px;
+    height: 60px;
+    background-color: #2B47F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    right: 1%;
+    top: 90%;
+    padding: 10px;
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+#cookies {
+    position: absolute; 
+    z-index: 99;
+    left:50px; 
+    top:120px; 
+    width: 400px; 
+    height: fit-content; 
+    background-color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-between; 
+    align-items: center; 
+    padding: 20px; 
+    border-radius:10px;
+}
+
+.aceita_cookie {
+    background-color: #2B47F8;
+    color: #FFFFFF;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border: none;
+    height: 45px;
+    width: 40%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color ease 0.2s;
+}
+.aceita_cookie:hover {
+    background-color: #4CAF50;
+    transition: background-color ease 0.2s;
+}
+
+.recusa_cookie {
+    background-color: #FFF176;
+    color: black;
+    font-family: "Poppins" Arial, Helvetica, sans-serif;
+    border: none;
+    height: 45px;
+    width: 40%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: background-color ease 0.2s;
+}
+.recusa_cookie:hover {
+    background-color: #FFD54F;
+    transition: background-color ease 0.2s;
+}
+
+@media (max-width:768px) {
+    #menuHamburguerMobile {
+        display: flex;
+    }
+
+    #redirecionamentoDesktop, #containerBtnEntrar {
+        display: none;
+    }
+
+    #containerBtnEntrarMobile {
+        display: flex;
+    }
+
+    #btnEntrar {
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        border:none;
+        color: ghostwhite;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: #4CAF50;
+        font-size: 18px;
+        margin: auto;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+        background-color: #243A69;
+        padding: 20px;
+    }
+
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 10%;
+
+    }
+
+    #imgMobileIntroducao {
+        height: 250px;
+        width: 100%;
+        display: flex;
+    }
+
+
+    #pImgsIlustrativas {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    #imgMobileIntroducaoDesktop {
+        display: none;
+    }
+
+    #conteudoImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerTituloCeducaQuiz {
+        text-transform: uppercase;
+        color: #243A69;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .containerIntroducao {
+        padding: 0px;
+    }
+
+    #containerBemVindo {
+        text-align: center;
+        color: #2B47F8;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        height: 12vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #seta {
+        width: 60px;
+        height: 60px;
+        background-color: #2B47F8;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        right: 3%;
+        top: 90%;
+        padding: 10px;
+    
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    #cookies {
+        width: 200px;
+        height: 350px;
+    }
+ }
+
+ @media (max-width:376px) {
+
+    #containerContatos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        height: fit-content;
+    }
+
+
+ }
+
+ @media (max-width:360px) {
+
+    #documentacao {
+        font-size: 10vw;
+    }
+
+
+ }
+
+ @media (min-width: 2000px) {
+    p {
+        font-size: 30px;
+    }
+
+ }
+

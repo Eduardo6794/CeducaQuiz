@@ -1,0 +1,111 @@
+:root {
+    --fonte_principal: 'Poppins';
+    --cor_fundo: #243A69;
+    --cor_fonte: #D9D9D9;
+    --cor_fonteA: #000;
+    --cor_fundo_form: #fff;
+    --btn_enviar: #2B47F8;
+    --btn_enviar_hover: #4CAF50;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.formulario {
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    background-color: var(--cor_fundo_form);
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.subform {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-style: normal;
+    font-family: var(--fonte_principal);
+}
+
+.btn_enviar_actived {
+    display: none;
+    background-color: var(--btn_enviar_hover);
+    border: var(--btn_enviar_hover);
+    border-radius:  100%;
+
+    border-right: #000;
+    border-width: 20px;
+
+
+}
+
+@keyframes btn_enviar_actived {
+    0% {
+        border-top: #000;
+    }
+    50% {
+        border-left: #000;
+    }
+
+    75% {
+        border-bottom: #000;
+    }
+
+    100% {
+        border-right: #000;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    .formulario {
+        width: 1000px;
+        height: 1000px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    .subform {
+        font-size: 40px;
+    }
+
+    .input_text {
+
+        height: 60px;
+        width: 600px;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .btn_enviar {
+        width: 150px;
+        height: 80px;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .btn_enviar:hover {
+        background-color: var(--btn_enviar_hover);
+        border: var(--btn_enviar_hover);
+        transform: scale(1.2);
+    }
+
+    .validacao {
+        font-size: 40px;
+    }
+}
+

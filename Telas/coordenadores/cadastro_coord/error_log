@@ -1,0 +1,1 @@
+[21-Jun-2025 22:27:20 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/olhona42/lampada7.com.br/ceduca/Telas/coordenadores/cadastro_coord/cadastro_coord.php:17) in /home1/olhona42/lampada7.com.br/ceduca/Telas/coordenadores/cadastro_coord/cadastro_coord.php on line 18

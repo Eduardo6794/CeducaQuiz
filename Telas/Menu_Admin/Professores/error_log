@@ -1,0 +1,5 @@
+[16-Jun-2025 23:50:52 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php on line 35
+[16-Jun-2025 23:50:52 America/Fortaleza] PHP Warning:  Undefined global variable $_SESSION in /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php on line 37
+[16-Jun-2025 23:50:52 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php on line 37
+[16-Jun-2025 23:50:52 America/Fortaleza] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php on line 91
+[16-Jun-2025 23:50:52 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php:1) in /home1/olhona42/lampada7.com.br/ceduca/Telas/Menu_Admin/Professores/consulta_prof.php on line 92

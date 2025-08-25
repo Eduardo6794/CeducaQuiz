@@ -1,0 +1,163 @@
+@import url('../../style_geral.css');
+@import url('../../CSS/style_inputs_forms_button.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.imglogo {
+    height: 130px;
+    position: absolute;
+    right: 120px;
+    top: 40px;
+}
+
+.classificados {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    padding: 6px;
+}
+
+.containeralunosclassif {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+}
+
+.alunoclassif {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alunoclassif h2, h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.alunoclassif img {
+    display: none;
+}
+
+.top1, .top2, .top3 {
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.top2 {
+    height: 250px;
+    background-color: #C0C0C0;
+}
+
+.top1 {
+    height: 350px;
+    background-color: #FFD700;
+}
+
+.top3 {
+    height: 150px;
+    background-color: #896728;
+}
+
+.restantealunos {
+    background-color: #D9D9D9;
+    width: 50%;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+
+    #alunoQueFizeramQuiz {
+        color: black;
+        font-family: 'Poppins', Arial, Helvetica,   sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: fit-content;
+        margin: 0;
+    }
+
+    #alunoQueFizeramQuiz:hover, .notaAlunoNumeroQuestoes:hover  {
+        scale: 1.02;
+        right: 10px;
+        color: rgb(67, 66, 66);
+    }
+}
+
+@media (max-width: 635px) {
+
+    .restantealunos {
+        margin-bottom: 20px;
+    }
+
+    .classificados {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-top: 70px;
+        height: 700px;
+    }
+
+    .containeralunosclassif {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .alunoclassif {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alunoclassif img {
+        display: block;
+    }
+    
+
+    #btnEnviar {
+        width: 50%;
+    }
+
+    .top1, .top2, .top3 {
+        display: none;
+    }
+
+    
+}
